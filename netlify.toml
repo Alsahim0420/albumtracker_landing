@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  # Solo construye/despliega en ramas que empiecen por "release" (release/1.0.0, release/2.0, etc.)
+  command = "node -e \"if (process.env.NETLIFY && process.env.BRANCH && !process.env.BRANCH.startsWith('release')) { console.log('Deploy ignorado: solo se despliega en ramas release/*'); process.exit(1); }\" && npm run build"
   publish = "dist"
 
 # Redirigir SPA: todas las rutas a index.html (por si usas React Router)
