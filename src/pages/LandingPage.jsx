@@ -92,7 +92,6 @@ export default function LandingPage() {
         <nav className="header-nav">
           <a href="#caracteristicas">Características</a>
           <a href="#como-funciona">Cómo funciona</a>
-          <a href="#testimonios">Testimonios</a>
         </nav>
         <div className="header-actions">
           <a href="#" className="btn btn-primary">
