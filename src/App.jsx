@@ -1,4 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {
+  BookOpen,
+  Download,
+  Play,
+  Check,
+  BarChart3,
+  Zap,
+  Cloud,
+  Shield,
+  Twitter,
+  Youtube,
+  LayoutGrid,
+  ArrowLeftRight,
+} from 'lucide-react'
 import './App.css'
 
 import videoMockup from './assets/video/video_mockup.mp4'
