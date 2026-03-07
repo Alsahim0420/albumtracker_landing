@@ -1,18 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {
-  BookOpen,
-  Download,
-  Play,
-  Check,
-  BarChart3,
-  Zap,
-  Cloud,
-  Shield,
-  Twitter,
-  Youtube,
-  LayoutGrid,
-  ArrowLeftRight,
-} from 'lucide-react'
 import './App.css'
 
 import CookieBanner from './components/CookieBanner'
@@ -20,9 +6,6 @@ import LandingPage from './pages/LandingPage'
 import Privacidad from './pages/Privacidad'
 import Terminos from './pages/Terminos'
 import Cookies from './pages/Cookies'
-
-import videoMockup from './assets/video/video_mockup.mp4'
-import celularPaisesImg from './assets/img/imagen_celular_paises.jpeg'
 
 function MobileMockup({ variant = 'filled', image, video }) {
   return (
