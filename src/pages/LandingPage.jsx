@@ -206,38 +206,51 @@ export default function LandingPage() {
 
       <footer className="footer">
         <div className="footer-grid">
+
           <div className="footer-brand">
             <div className="footer-logo">
               <BookOpen size={24} />
-              <span>Album Tracker</span>
+              <span>Album Collect 2026</span>
             </div>
-            <p>La herramienta definitiva para los amantes del coleccionismo deportivo.</p>
+
+            <p>
+              La herramienta definitiva para llevar el control de tu álbum
+              del Mundial 2026.
+            </p>
+
             <div className="footer-social">
-              <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-              <a href="#" aria-label="YouTube"><Youtube size={20} /></a>
+              <a href="https://github.com/tuusuario" target="_blank">
+                <Twitter size={20} />
+              </a>
             </div>
           </div>
+
           <div className="footer-links">
             <h4>Producto</h4>
             <a href="#caracteristicas">Características</a>
-            <a href="#">Descarga</a>
-            <a href="#">Novedades</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="https://play.google.com/store/apps/details?id=com.app.albumcollect" target="_blank">
+              Descargar App
+            </a>
           </div>
-          <div className="footer-links">
-            <h4>Recursos</h4>
-            <a href="#">Guía de inicio</a>
-            <a href="#">Ideas de intercambio</a>
-            <a href="#">Soporte</a>
-          </div>
+
+          {/*<div className="footer-links">
+            <h4>Soporte</h4>
+            <a href="mailto:soporte@albumcollect.com">Contacto</a>
+          </div>*/}
+
           <div className="footer-links">
             <h4>Legal</h4>
             <Link to="/privacidad">Privacidad</Link>
             <Link to="/terminos">Términos</Link>
             <Link to="/cookies">Cookies</Link>
           </div>
+
         </div>
+
         <div className="footer-bottom">
-          © {new Date().getFullYear()} Album Tracker. No afiliado con FIFA o Panini. Hecho por fans para fans.
+          © {new Date().getFullYear()} Album Collect.
+          Proyecto independiente no afiliado con FIFA ni Panini.
         </div>
       </footer>
     </div>
