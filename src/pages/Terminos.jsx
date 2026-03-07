@@ -8,14 +8,14 @@ export default function Terminos() {
       <section className="legal-section">
         <h2>1. Aceptación</h2>
         <p>
-          Al usar la web o la aplicación Album Tracker aceptas estos términos. Si no estás de acuerdo con ellos, debes abstenerte de utilizar el servicio.
+          Al usar la web o la aplicación Album Collect 2026 aceptas estos términos. Si no estás de acuerdo con ellos, debes abstenerte de utilizar el servicio.
         </p>
       </section>
 
       <section className="legal-section">
         <h2>2. Descripción del servicio</h2>
         <p>
-          Album Tracker es una herramienta que permite a los usuarios registrar y gestionar el progreso de sus álbumes de colección (por ejemplo, álbumes de figuras deportivas).
+          Album Collect 2026 es una herramienta que permite a los usuarios registrar y gestionar el progreso de sus álbumes de colección (por ejemplo, álbumes de figuras deportivas).
         </p>
         <p>Las funcionalidades pueden incluir, entre otras:</p>
         <ul>
@@ -42,11 +42,11 @@ export default function Terminos() {
       <section className="legal-section">
         <h2>4. Propiedad intelectual</h2>
         <p>
-          Album Tracker no está afiliado con FIFA, Panini ni otras marcas comerciales relacionadas con álbumes de colección.
+          Album Collect 2026 no está afiliado con FIFA, Panini ni otras marcas comerciales relacionadas con álbumes de colección.
         </p>
         <p>Las marcas, logotipos y contenidos de terceros pertenecen a sus respectivos titulares.</p>
         <p>
-          El diseño, código, interfaz, textos y elementos propios de Album Tracker son propiedad de sus desarrolladores y no pueden copiarse, distribuirse o reutilizarse sin autorización.
+          El diseño, código, interfaz, textos y elementos propios de Album Collect 2026 son propiedad de sus desarrolladores y no pueden copiarse, distribuirse o reutilizarse sin autorización.
         </p>
       </section>
 
@@ -66,7 +66,7 @@ export default function Terminos() {
           El servicio se ofrece «tal cual» y «según disponibilidad».
         </p>
         <p>
-          Album Tracker no garantiza que el servicio esté libre de errores o interrupciones y no será responsable por daños indirectos, pérdida de datos o interrupciones del servicio, salvo cuando la ley aplicable no permita dicha limitación.
+          Album Collect 2026 no garantiza que el servicio esté libre de errores o interrupciones y no será responsable por daños indirectos, pérdida de datos o interrupciones del servicio, salvo cuando la ley aplicable no permita dicha limitación.
         </p>
       </section>
 

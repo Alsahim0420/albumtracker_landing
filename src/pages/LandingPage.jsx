@@ -87,7 +87,7 @@ export default function LandingPage() {
       <header className="header">
         <Link to="/" className="header-logo">
           <BookOpen size={28} strokeWidth={2} />
-          <span>Album Tracker</span>
+          <span>Album Collect 2026</span>
         </Link>
         <nav className="header-nav">
           <a href="#caracteristicas">Características</a>
@@ -191,7 +191,7 @@ export default function LandingPage() {
       <section className="cta-banner">
         <div className="cta-banner-content">
           <h2>Prepárate para completar tu álbum</h2>
-          <p>Únete a miles de coleccionistas que ya están usando Album Tracker para organizar su pasión.</p>
+          <p>Únete a miles de coleccionistas que ya están usando Album Collect 2026 para organizar su pasión.</p>
           <a href="#" className="btn btn-accent btn-lg">
             <Download size={20} />
             Descargar Gratis
@@ -207,7 +207,7 @@ export default function LandingPage() {
           <div className="footer-brand">
             <div className="footer-logo">
               <BookOpen size={24} />
-              <span>Album Tracker</span>
+              <span>Album Collect 2026</span>
             </div>
             <p>La herramienta definitiva para los amantes del coleccionismo deportivo.</p>
             <div className="footer-social">
@@ -235,7 +235,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="footer-bottom">
-          © {new Date().getFullYear()} Album Tracker. No afiliado con FIFA o Panini. Hecho por fans para fans.
+          © {new Date().getFullYear()} Album Collect 2026. No afiliado con FIFA o Panini. Hecho por fans para fans.
         </div>
       </footer>
     </div>

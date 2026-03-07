@@ -8,7 +8,7 @@ export default function Privacidad() {
       <section className="legal-section">
         <h2>1. Responsable del tratamiento</h2>
         <p>
-          Album Tracker («nosotros», «la app») es una aplicación para el seguimiento de álbumes de colección.
+          Album Collect 2026 («nosotros», «la app») es una aplicación para el seguimiento de álbumes de colección.
           Los datos que recopilamos en esta web y en la aplicación son tratados de acuerdo con esta política.
         </p>
       </section>

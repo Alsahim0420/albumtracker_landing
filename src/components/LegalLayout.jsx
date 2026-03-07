@@ -7,7 +7,7 @@ export default function LegalLayout({ title, children }) {
       <header className="header">
         <Link to="/" className="header-logo">
           <BookOpen size={28} strokeWidth={2} />
-          <span>Album Tracker</span>
+          <span>Album Collect 2026</span>
         </Link>
         <nav className="header-nav">
           <Link to="/">
@@ -30,7 +30,7 @@ export default function LegalLayout({ title, children }) {
           {' · '}
           <Link to="/cookies">Cookies</Link>
           <br />
-          © {new Date().getFullYear()} Album Tracker. No afiliado con FIFA o Panini. Hecho por fans para fans.
+          © {new Date().getFullYear()} Album Collect 2026. No afiliado con FIFA o Panini. Hecho por fans para fans.
         </div>
       </footer>
     </div>
