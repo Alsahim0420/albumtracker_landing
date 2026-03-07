@@ -1,88 +1,98 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
+import { Link } from 'react-router-dom'
+import {
+  BookOpen,
+  Download,
+  Play,
+  Check,
+  BarChart3,
+  Zap,
+  Cloud,
+  Shield,
+  Twitter,
+  Youtube,
+  LayoutGrid,
+  ArrowLeftRight,
+} from 'lucide-react'
 
-import videoMockup from './assets/video/video_mockup.mp4'
-import celularPaisesImg from './assets/img/imagen_celular_paises.jpeg'
+import videoMockup from '../assets/video/video_mockup.mp4'
+import celularPaisesImg from '../assets/img/imagen_celular_paises.jpeg'
 
 function MobileMockup({ variant = 'filled', image, video }) {
   return (
-    <div className={`phone-screen phone-screen--${variant}`}>
-      {video ? (
-        <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="mockup-video"
-        />
-      ) : image ? (
-        <img
-          src={image}
-          alt="App preview"
-          className="mockup-image"
-        />
-      ) : (
-        <>
-          <div className="phone-header">
-            <span>Mi Álbum</span>
-            <span className="phone-percent">
-              {variant === 'filled' ? '88%' : ''} Completado
-            </span>
-          </div>
-
-          {variant === 'filled' && (
+    <div className="phone-mockup">
+      <div className="phone-frame">
+        <div className="phone-notch"></div>
+        <div className={`phone-screen phone-screen--${variant}`}>
+          {video ? (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="mockup-video"
+            />
+          ) : image ? (
+            <img
+              src={image}
+              alt="App preview"
+              className="mockup-image"
+            />
+          ) : (
             <>
-              <div className="phone-stats">
-                <div><strong>452</strong> Total</div>
-                <div><strong>12</strong> Repes</div>
-                <div><strong>218</strong> Faltan</div>
+              <div className="phone-header">
+                <span>Mi Álbum</span>
+                <span className="phone-percent">
+                  {variant === 'filled' ? '88%' : ''} Completado
+                </span>
               </div>
-
-              <div className="phone-grid-label">ARGENTINA</div>
-
-              <div className="phone-sticker-grid">
-                {Array.from({ length: 18 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className={`sticker ${
-                      i % 6 === 2
-                        ? 'sticker--repeated'
-                        : i < 8
-                        ? 'sticker--filled'
-                        : ''
-                    }`}
-                  />
-                ))}
-              </div>
+              {variant === 'filled' && (
+                <>
+                  <div className="phone-stats">
+                    <div><strong>452</strong> Total</div>
+                    <div><strong>12</strong> Repes</div>
+                    <div><strong>218</strong> Faltan</div>
+                  </div>
+                  <div className="phone-grid-label">ARGENTINA</div>
+                  <div className="phone-sticker-grid">
+                    {Array.from({ length: 18 }).map((_, i) => (
+                      <div
+                        key={i}
+                        className={`sticker ${
+                          i % 6 === 2 ? 'sticker--repeated' : i < 8 ? 'sticker--filled' : ''
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+              {variant === 'empty' && (
+                <div className="phone-empty-grid">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="empty-slot" />
+                  ))}
+                </div>
+              )}
             </>
           )}
-
-          {variant === 'empty' && (
-            <div className="phone-empty-grid">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="empty-slot" />
-              ))}
-            </div>
-          )}
-        </>
-      )}
+        </div>
+      </div>
     </div>
   )
 }
 
-function App() {
+export default function LandingPage() {
   return (
     <div className="landing">
-      {/* Header */}
       <header className="header">
-        <div className="header-logo">
+        <Link to="/" className="header-logo">
           <BookOpen size={28} strokeWidth={2} />
           <span>Album Tracker</span>
-        </div>
+        </Link>
         <nav className="header-nav">
           <a href="#caracteristicas">Características</a>
           <a href="#como-funciona">Cómo funciona</a>
+          <a href="#testimonios">Testimonios</a>
         </nav>
         <div className="header-actions">
           <a href="#" className="btn btn-primary">
@@ -92,7 +102,6 @@ function App() {
         </div>
       </header>
 
-      {/* Hero Section - imagen arriba */}
       <section className="hero">
         <div className="hero-content">
           <h1>Controla tu álbum del Mundial 2026 fácilmente</h1>
@@ -121,7 +130,6 @@ function App() {
         </div>
       </section>
 
-      {/* Trust Banner */}
       <section className="trust-banner">
         <span><Shield size={18} /> 100% Sin Publicidad</span>
         <span><Shield size={18} /> Firebase Secured</span>
@@ -129,7 +137,6 @@ function App() {
         <span><Shield size={18} /> Actualizaciones Semanales</span>
       </section>
 
-      {/* Características */}
       <section id="caracteristicas" className="features">
         <h2>Todo lo que necesitas para completar tu colección</h2>
         <p className="features-subtitle">Diseñado para que te concentres en intercambiar y completar, no en organizar.</p>
@@ -157,7 +164,6 @@ function App() {
         </div>
       </section>
 
-      {/* Cómo funciona */}
       <section id="como-funciona" className="how-it-works">
         <span className="section-label">PROCESO SIMPLE</span>
         <h2>Cómo empezar en 3 pasos</h2>
@@ -183,7 +189,6 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Banner */}
       <section className="cta-banner">
         <div className="cta-banner-content">
           <h2>Prepárate para completar tu álbum</h2>
@@ -194,14 +199,10 @@ function App() {
           </a>
         </div>
         <div className="cta-banner-mockup">
-          <MobileMockup
-            variant="filled"
-            video={videoMockup}
-          />
+          <MobileMockup variant="filled" video={videoMockup} />
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-grid">
           <div className="footer-brand">
@@ -229,17 +230,15 @@ function App() {
           </div>
           <div className="footer-links">
             <h4>Legal</h4>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos</a>
-            <a href="#">Cookies</a>
+            <Link to="/privacidad">Privacidad</Link>
+            <Link to="/terminos">Términos</Link>
+            <Link to="/cookies">Cookies</Link>
           </div>
         </div>
         <div className="footer-bottom">
-          © 2024 Album Tracker. No afiliado con FIFA o Panini. Hecho por fans para fans.
+          © {new Date().getFullYear()} Album Tracker. No afiliado con FIFA o Panini. Hecho por fans para fans.
         </div>
       </footer>
     </div>
   )
 }
-
-export default App
