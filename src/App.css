@@ -16,6 +16,7 @@
   min-height: 100vh;
   background: var(--white);
   color: var(--blue-dark);
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -165,33 +166,27 @@
   flex-shrink: 0;
 }
 
-/* Phone Mockup */
-.phone-mockup {
+.hero-mockup {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 130px;
 }
 
-.phone-frame {
-  width: 280px;
-  background: #1a1a1a;
-  border-radius: 36px;
-  padding: 12px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.phone-notch {
-  width: 100px;
-  height: 24px;
-  background: #0a0a0a;
-  border-radius: 0 0 16px 16px;
-  margin: 0 auto 8px;
-}
-
+/* Phone Mockup */
 .phone-screen {
-  background: var(--white);
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.mockup-image,
+.mockup-video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 24px;
-  overflow: hidden;
-  min-height: 480px;
+  display: block;
+  object-fit: cover;
 }
 
 .phone-header {
@@ -461,6 +456,8 @@
   gap: 3rem;
 
   width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
   padding: 5rem 8%;
 
   background: var(--blue-dark);
@@ -482,43 +479,18 @@
   max-width: 400px;
 }
 
-.cta-banner-mockup .phone-frame {
+.cta-banner-mockup {
   background: rgba(255, 255, 255, 0.1);
 }
 
 .cta-banner-mockup .phone-screen {
-  background: var(--gray-100);
+  background: transparent;
 }
 
-.phone-screen {
-  width: 100%;
-  height: 100%;
-}
-
-.mockup-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 24px;
-}
-
-.phone-frame {
+.cta-banner-mockup {
   width: 300px;
-  aspect-ratio: 9 / 19;
-  background: #1a1a1a;
-  border-radius: 36px;
-  padding: 12px;
-}
-
-.mockup-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cta-banner-mockup .phone-frame {
-  width: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Footer */
@@ -604,6 +576,18 @@
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .hero-mockup {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .phone-screen {
+    max-width: min(280px, 85vw);
   }
 
   .hero-desc {
@@ -632,7 +616,8 @@
   .cta-banner {
     grid-template-columns: 1fr;
     text-align: center;
-    margin-inline: 1rem;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
   }
 
   .cta-banner-content p {
@@ -642,6 +627,9 @@
 
   .cta-banner-mockup {
     justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .footer-grid {
@@ -650,8 +638,28 @@
 }
 
 @media (max-width: 640px) {
+  .header {
+    padding: 1rem;
+  }
+
   .header-actions {
     flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .cta-banner {
+    padding: 2.5rem 1rem;
+  }
+
+  .cta-banner-mockup {
+    max-width: 240px;
+  }
+
+  .phone-screen {
+    max-width: min(260px, 90vw);
   }
 
   .hero-buttons {
