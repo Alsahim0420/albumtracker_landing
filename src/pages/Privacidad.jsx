@@ -3,7 +3,7 @@ import LegalLayout from '../components/LegalLayout'
 export default function Privacidad() {
   return (
     <LegalLayout title="Política de Privacidad">
-      <p className="legal-updated">Última actualización: febrero 2025</p>
+      <p className="legal-updated">Última actualización: marzo 2025</p>
 
       <section className="legal-section">
         <h2>1. Responsable del tratamiento</h2>
