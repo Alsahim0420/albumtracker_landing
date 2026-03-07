@@ -87,7 +87,7 @@ export default function LandingPage() {
       <header className="header">
         <Link to="/" className="header-logo">
           <BookOpen size={28} strokeWidth={2} />
-          <span>Album Tracker</span>
+          <span>Album Collect 2026</span>
         </Link>
         <nav className="header-nav">
           <a href="#caracteristicas">Características</a>
@@ -192,7 +192,7 @@ export default function LandingPage() {
         <div className="cta-banner-inner">
           <div className="cta-banner-content">
             <h2>Prepárate para completar tu álbum</h2>
-            <p>Únete a miles de coleccionistas que ya están usando Album Tracker para organizar su pasión.</p>
+            <p>Únete a miles de coleccionistas que ya están usando Album Collect 2026 para organizar su pasión.</p>
             <a href="#" className="btn btn-accent btn-lg">
               <Download size={20} />
               Descargar Gratis
