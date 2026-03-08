@@ -4,7 +4,7 @@ import LegalLayout from '../components/LegalLayout'
 export default function Cookies() {
   return (
     <LegalLayout title="Política de Cookies">
-      <p className="legal-updated">Última actualización: marzo 2025</p>
+      <p className="legal-updated">Última actualización: marzo 2026</p>
 
       <section className="legal-section">
         <h2>1. Qué son las cookies</h2>

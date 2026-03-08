@@ -3,7 +3,7 @@ import LegalLayout from '../components/LegalLayout'
 export default function Terminos() {
   return (
     <LegalLayout title="Términos de Uso">
-      <p className="legal-updated">Última actualización: marzo 2025</p>
+      <p className="legal-updated">Última actualización: marzo 2026</p>
 
       <section className="legal-section">
         <h2>1. Aceptación</h2>
@@ -15,14 +15,12 @@ export default function Terminos() {
       <section className="legal-section">
         <h2>2. Descripción del servicio</h2>
         <p>
-          Album Collect 2026 es una herramienta que permite a los usuarios registrar y gestionar el progreso de sus álbumes de colección (por ejemplo, álbumes de figuras deportivas).
+          Album Collect 2026 es una herramienta que permite a los usuarios registrar y gestionar el progreso de sus álbum de la copa del mundo 2026.
         </p>
         <p>Las funcionalidades pueden incluir, entre otras:</p>
         <ul>
-          <li>Registro y marcado de estampas</li>
           <li>Estadísticas de progreso</li>
           <li>Gestión de repetidas</li>
-          <li>Sincronización de datos en la nube</li>
         </ul>
         <p>El servicio puede cambiar, actualizarse o modificarse en cualquier momento.</p>
       </section>
