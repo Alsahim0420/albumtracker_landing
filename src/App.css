@@ -465,10 +465,15 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 3rem;
+  gap: clamp(2rem, 6vw, 4.5rem);
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.cta-banner-content {
+  min-width: 0;
 }
 
 .cta-banner-content h2 {
@@ -482,21 +487,20 @@
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 1.5rem;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .cta-banner-mockup {
   background: transparent;
+  width: min(300px, 40vw);
+  min-width: 240px;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .cta-banner-mockup .phone-screen {
   background: transparent;
-}
-
-.cta-banner-mockup {
-  width: 300px;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* Footer */
@@ -865,7 +869,7 @@
 
   .cta-banner-inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     text-align: center;
   }
 
@@ -875,10 +879,11 @@
   }
 
   .cta-banner-mockup {
-    justify-content: center;
     width: 100%;
     max-width: 280px;
+    min-width: unset;
     margin: 0 auto;
+    justify-self: center;
   }
 
   .footer-grid {
