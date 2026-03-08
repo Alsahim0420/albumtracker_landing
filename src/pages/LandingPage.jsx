@@ -39,6 +39,7 @@ function MobileMockup({ variant = 'filled', image, video }) {
               className="mockup-image"
             />
           ) : (
+            
             <>
               <div className="phone-header">
                 <span>Mi Álbum</span>
