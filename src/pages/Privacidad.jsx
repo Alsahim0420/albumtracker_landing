@@ -3,12 +3,12 @@ import LegalLayout from '../components/LegalLayout'
 export default function Privacidad() {
   return (
     <LegalLayout title="Política de Privacidad">
-      <p className="legal-updated">Última actualización: marzo 2025</p>
+      <p className="legal-updated">Última actualización: marzo 2026</p>
 
       <section className="legal-section">
         <h2>1. Responsable del tratamiento</h2>
         <p>
-          Album Collect 2026 («nosotros», «la app») es una aplicación para el seguimiento de álbumes de colección. Los datos que recopilamos en esta web y en la aplicación se tratan de acuerdo con esta política.
+          Album Collect 2026 («nosotros», «la app») es una aplicación para el seguimiento de álbumes de colección.
         </p>
         <p>
           Esta aplicación es un proyecto independiente y no está afiliada ni asociada oficialmente con FIFA, Panini u otras marcas de álbumes de colección.
@@ -16,66 +16,61 @@ export default function Privacidad() {
       </section>
 
       <section className="legal-section">
-        <h2>2. Datos que recopilamos</h2>
-        <p>Podemos recopilar los siguientes tipos de información:</p>
-        <p><strong>Datos de cuenta</strong></p>
-        <p>Email y nombre si decides registrarte en la aplicación.</p>
-        <p><strong>Datos de uso</strong></p>
+        <h2>2. Información que utilizamos</h2>
         <p>
-          Progreso de tu álbum, estampas registradas y preferencias de la aplicación.
-          Estos datos pueden almacenarse localmente en el dispositivo del usuario para permitir el funcionamiento de la app.
+          La aplicación no recopila ni almacena datos personales de los usuarios en servidores externos.
         </p>
-        <p><strong>Datos técnicos</strong></p>
         <p>
-          Información básica como tipo de dispositivo, sistema operativo y uso de la web. En la web pueden utilizarse cookies según tu configuración.
+          Toda la información relacionada con el uso de la app se almacena localmente en el dispositivo del usuario para permitir el funcionamiento de la aplicación.
+        </p>
+        <p>Los datos que pueden almacenarse localmente incluyen:</p>
+        <ul>
+          <li>Datos de uso dentro de la aplicación</li>
+          <li>Progreso del álbum</li>
+          <li>Estampas registradas</li>
+          <li>Preferencias de la aplicación</li>
+        </ul>
+        <p>
+          Estos datos permanecen únicamente en el dispositivo del usuario y no se transmiten a servidores externos.
         </p>
       </section>
 
       <section className="legal-section">
-        <h2>3. Finalidad del tratamiento</h2>
-        <p>Usamos los datos para:</p>
+        <h2>3. Finalidad del uso de la información</h2>
+        <p>La información almacenada localmente se utiliza únicamente para:</p>
         <ul>
           <li>Permitir el funcionamiento de la aplicación</li>
           <li>Guardar el progreso del álbum</li>
-          <li>Mejorar la experiencia del usuario</li>
-          <li>Proporcionar soporte técnico</li>
+          <li>Mantener las preferencias del usuario</li>
+          <li>Mejorar la experiencia dentro de la app</li>
         </ul>
-        <p>No vendemos ni compartimos tus datos personales con terceros con fines comerciales.</p>
+        <p>La aplicación no vende, comparte ni transfiere datos personales a terceros.</p>
       </section>
 
       <section className="legal-section">
-        <h2>4. Base legal y conservación</h2>
-        <p>El tratamiento de los datos se basa en:</p>
-        <ul>
-          <li>Tu consentimiento al utilizar la aplicación</li>
-          <li>La ejecución del servicio que ofrecemos</li>
-        </ul>
+        <h2>4. Almacenamiento de la información</h2>
         <p>
-          Conservamos los datos mientras sea necesario para proporcionar las funcionalidades de la aplicación o mientras mantengas tu cuenta activa.
+          Toda la información generada por el usuario se almacena exclusivamente en el dispositivo mediante almacenamiento local.
+        </p>
+        <p>
+          Si el usuario elimina la aplicación, los datos almacenados localmente pueden eliminarse del dispositivo según la configuración del sistema operativo.
         </p>
       </section>
 
       <section className="legal-section">
-        <h2>5. Seguridad de los datos</h2>
+        <h2>5. Seguridad</h2>
         <p>
-          Aplicamos medidas razonables para proteger la información del usuario contra accesos no autorizados o usos indebidos.
+          Aunque la aplicación no recopila datos personales en servidores externos, aplicamos buenas prácticas de desarrollo para garantizar un funcionamiento seguro.
         </p>
         <p>
-          No obstante, ningún sistema en internet puede garantizar una seguridad absoluta.
+          No obstante, ningún sistema tecnológico puede garantizar una seguridad absoluta.
         </p>
       </section>
 
       <section className="legal-section">
         <h2>6. Derechos del usuario</h2>
-        <p>Puedes solicitar en cualquier momento:</p>
-        <ul>
-          <li>Acceso a tus datos</li>
-          <li>Corrección de información incorrecta</li>
-          <li>Eliminación de tus datos</li>
-          <li>Limitación u oposición al tratamiento</li>
-        </ul>
         <p>
-          Para ejercer estos derechos o realizar consultas sobre privacidad, puedes escribir al correo de soporte indicado en la aplicación o en esta web.
+          Dado que la aplicación no recopila datos personales en servidores, el usuario mantiene control total sobre la información almacenada en su dispositivo.
         </p>
       </section>
 
