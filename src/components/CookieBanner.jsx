@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Cookie, X } from 'lucide-react'
 
-const COOKIE_CONSENT_KEY = 'albumtracker_cookie_consent'
+const COOKIE_CONSENT_KEY = 'albumcollect_cookie_consent'
 const COOKIE_CONSENT_EXPIRY_MONTHS = 12
 
 function getStoredConsent() {
