@@ -1,6 +1,6 @@
-# AlbumTracker Landing
+# albumcollect Landing
 
-Landing page del proyecto **AlbumTracker** — React + Vite.
+Landing page del proyecto **albumcollect** — React + Vite.
 
 ## Inicio rápido
 
