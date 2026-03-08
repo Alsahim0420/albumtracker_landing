@@ -189,18 +189,16 @@ export default function LandingPage() {
       </section>
 
       <section className="cta-banner">
-        <div className="cta-banner-inner">
-          <div className="cta-banner-content">
-            <h2>Prepárate para completar tu álbum</h2>
-            <p>Únete a miles de coleccionistas que ya están usando Album Collect 2026 para organizar su pasión.</p>
-            <a href="#" className="btn btn-accent btn-lg">
-              <Download size={20} />
-              Descargar Gratis
-            </a>
-          </div>
-          <div className="cta-banner-mockup">
-            <MobileMockup variant="filled" video={videoMockup} />
-          </div>
+        <div className="cta-banner-content">
+          <h2>Prepárate para completar tu álbum</h2>
+          <p>Únete a miles de coleccionistas que ya están usando Album Collect 2026 para organizar su pasión.</p>
+          <a href="#" className="btn btn-accent btn-lg">
+            <Download size={20} />
+            Descargar Gratis
+          </a>
+        </div>
+        <div className="cta-banner-mockup">
+          <MobileMockup variant="filled" video={videoMockup} />
         </div>
       </section>
 
@@ -249,8 +247,7 @@ export default function LandingPage() {
         </div>
 
         <div className="footer-bottom">
-          © {new Date().getFullYear()} Album Collect.
-          Proyecto independiente no afiliado con FIFA ni Panini.
+          © {new Date().getFullYear()} Album Collect 2026. No afiliado con FIFA o Panini. Hecho por fans para fans.
         </div>
       </footer>
     </div>

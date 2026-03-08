@@ -9,12 +9,12 @@ function getStoredConsent() {
   try {
     const raw = localStorage.getItem(COOKIE_CONSENT_KEY)
     if (!raw) return null
-    const { choice, expires } = JSON.parse(raw)
+    const { expires } = JSON.parse(raw)
     if (expires && new Date(expires) < new Date()) {
       localStorage.removeItem(COOKIE_CONSENT_KEY)
       return null
     }
-    return choice
+    return true
   } catch {
     return null
   }
@@ -31,24 +31,18 @@ function setStoredConsent(choice) {
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
-  const [preferencesOpen, setPreferencesOpen] = useState(false)
-  const [analytics, setAnalytics] = useState(true)
 
   useEffect(() => {
-    const consent = getStoredConsent()
-    if (consent === null) setVisible(true)
+    if (getStoredConsent() === null) setVisible(true)
   }, [])
 
   const hide = (choice) => {
     setStoredConsent(choice)
     setVisible(false)
-    setPreferencesOpen(false)
-    // Aquí podrías activar/desactivar scripts de analytics según choice.analytics
   }
 
-  const acceptAll = () => hide({ essential: true, analytics: true })
-  const acceptEssentialOnly = () => hide({ essential: true, analytics: false })
-  const savePreferences = () => hide({ essential: true, analytics })
+  const acceptAll = () => hide('all')
+  const acceptEssentialOnly = () => hide('essential')
 
   if (!visible) return null
 
@@ -62,74 +56,33 @@ export default function CookieBanner() {
           <div>
             <p className="cookie-banner-title">Usamos cookies</p>
             <p className="cookie-banner-text">
-              Utilizamos cookies propias para el funcionamiento de la web y para recordar tu preferencia.
-              Opcionalmente, cookies de análisis para mejorar la experiencia. Puedes aceptar todas, solo las
-              necesarias o personalizar en «Preferencias». Más información en nuestra{' '}
-              <Link to="/cookies" className="cookie-banner-link" onClick={() => setPreferencesOpen(false)}>
+              Utilizamos cookies esenciales para el funcionamiento de la web y cookies de preferencias para recordar tu elección. Puedes aceptar todas, utilizar solo las necesarias o consultar más información en nuestra{' '}
+              <Link to="/cookies" className="cookie-banner-link">
                 política de cookies
               </Link>.
             </p>
           </div>
         </div>
 
-        {!preferencesOpen ? (
-          <div className="cookie-banner-actions">
-            <button
-              type="button"
-              className="cookie-btn cookie-btn-secondary"
-              onClick={() => setPreferencesOpen(true)}
-            >
-              Preferencias
-            </button>
-            <button
-              type="button"
-              className="cookie-btn cookie-btn-outline"
-              onClick={acceptEssentialOnly}
-            >
-              Solo necesarias
-            </button>
-            <button
-              type="button"
-              className="cookie-btn cookie-btn-primary"
-              onClick={acceptAll}
-            >
-              Aceptar todas
-            </button>
-          </div>
-        ) : (
-          <div className="cookie-preferences">
-            <div className="cookie-pref-row">
-              <span>Cookies esenciales</span>
-              <span className="cookie-pref-badge">Siempre activas</span>
-            </div>
-            <div className="cookie-pref-row">
-              <label className="cookie-pref-label">
-                <input
-                  type="checkbox"
-                  checked={analytics}
-                  onChange={(e) => setAnalytics(e.target.checked)}
-                />
-                Cookies de análisis (uso de la web)
-              </label>
-            </div>
-            <div className="cookie-banner-actions cookie-pref-actions">
-              <button
-                type="button"
-                className="cookie-btn cookie-btn-outline"
-                onClick={() => setPreferencesOpen(false)}
-              >
-                Volver
-              </button>
-              <button
-                type="button"
-                className="cookie-btn cookie-btn-primary"
-                onClick={savePreferences}
-              >
-                Guardar preferencias
-              </button>
-            </div>
-          </div>
-        )}
+        <div className="cookie-banner-actions">
+          <Link to="/cookies" className="cookie-btn cookie-btn-secondary">
+            Más información
+          </Link>
+          <button
+            type="button"
+            className="cookie-btn cookie-btn-outline"
+            onClick={acceptEssentialOnly}
+          >
+            Solo necesarias
+          </button>
+          <button
+            type="button"
+            className="cookie-btn cookie-btn-primary"
+            onClick={acceptAll}
+          >
+            Aceptar todas
+          </button>
+        </div>
 
         <button
           type="button"
