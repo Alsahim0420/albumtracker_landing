@@ -131,9 +131,7 @@ export default function LandingPage() {
 
       <section className="trust-banner">
         <span><Shield size={18} /> 100% Sin Publicidad</span>
-        <span><Shield size={18} /> Firebase Secured</span>
         <span><Shield size={18} /> Hecho por Fans</span>
-        <span><Shield size={18} /> Actualizaciones Semanales</span>
       </section>
 
       <section id="caracteristicas" className="features">
