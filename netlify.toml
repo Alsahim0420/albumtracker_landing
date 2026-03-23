@@ -1,6 +1,5 @@
 [build]
-  # Solo despliega en la rama main; el resto falla el build
-  command = "node -e \"if (process.env.NETLIFY && process.env.BRANCH && process.env.BRANCH !== 'main') { console.log('Deploy ignorado: solo se despliega desde la rama main'); process.exit(1); }\" && npm run build"
+  command = "npm run build"
   publish = "dist"
 
 # Redirigir SPA: todas las rutas a index.html (por si usas React Router)
