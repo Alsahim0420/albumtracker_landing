@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "node -e \"if (process.env.NETLIFY && process.env.BRANCH && process.env.BRANCH !== 'main') { console.log('Deploy ignorado: solo main'); process.exit(1); }\" && npm run build"
   publish = "dist"
 
 # Redirigir SPA: todas las rutas a index.html (por si usas React Router)
