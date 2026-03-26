@@ -215,12 +215,6 @@ export default function LandingPage() {
               La herramienta definitiva para llevar el control de tu álbum
               del Mundial 2026.
             </p>
-
-            <div className="footer-social">
-              <a href="https://github.com/tuusuario" target="_blank">
-                <Twitter size={20} />
-              </a>
-            </div>
           </div>
 
           <div className="footer-links">
@@ -231,11 +225,6 @@ export default function LandingPage() {
               Descargar App
             </a>
           </div>
-
-          {/*<div className="footer-links">
-            <h4>Soporte</h4>
-            <a href="mailto:soporte@albumcollect.com">Contacto</a>
-          </div>*/}
 
           <div className="footer-links">
             <h4>Legal</h4>
