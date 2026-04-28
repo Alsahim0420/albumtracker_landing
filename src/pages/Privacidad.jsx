@@ -33,6 +33,9 @@ export default function Privacidad() {
         <p>
           Estos datos permanecen únicamente en el dispositivo del usuario y no se transmiten a servidores externos.
         </p>
+        <p>
+          La app no utiliza servicios de analítica de terceros, no integra publicidad y no comparte información con terceros.
+        </p>
       </section>
 
       <section className="legal-section">

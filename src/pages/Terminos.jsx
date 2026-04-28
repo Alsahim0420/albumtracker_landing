@@ -51,10 +51,13 @@ export default function Terminos() {
       <section className="legal-section">
         <h2>5. Datos y almacenamiento</h2>
         <p>
-          El progreso del usuario puede almacenarse localmente en el dispositivo o sincronizarse mediante servicios en la nube (por ejemplo, Firebase).
+          El progreso del usuario se almacena localmente en el dispositivo.
         </p>
         <p>
-          El usuario es responsable de mantener acceso a su cuenta o dispositivo. No garantizamos la disponibilidad permanente de los datos.
+          La app no comparte información con terceros ni transmite datos de uso a servidores externos.
+        </p>
+        <p>
+          El usuario es responsable de conservar el acceso a su dispositivo. Si desinstala la app o borra sus datos locales, el progreso podría perderse.
         </p>
       </section>
 
