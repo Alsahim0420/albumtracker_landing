@@ -13,6 +13,7 @@ import {
   LayoutGrid,
   ArrowLeftRight,
 } from 'lucide-react'
+import {redirectToStore} from '../utils/deviceRedirect'
 
 import videoMockup from '../assets/video/video_mockup.mp4'
 import celularPaisesImg from '../assets/img/imagen_celular_paises.jpeg'
@@ -92,9 +93,10 @@ export default function LandingPage() {
         <nav className="header-nav">
           <a href="#caracteristicas">Características</a>
           <a href="#como-funciona">Cómo funciona</a>
+          <a href="#privacidad-datos">Privacidad</a>
         </nav>
         <div className="header-actions">
-          <a href="#" className="btn btn-primary">
+          <a href="#" className="btn btn-primary" onClick={redirectToStore}>
             <Download size={18} />
             Descargar App
           </a>
@@ -106,12 +108,12 @@ export default function LandingPage() {
           <h1>Controla tu álbum del Mundial 2026 fácilmente</h1>
           <p className="hero-desc">
             La herramienta profesional para coleccionistas serios. Sin anuncios molestos,
-            sincronización en la nube instantánea y estadísticas detalladas en tiempo real.
+            funcionamiento 100% local en tu dispositivo y estadísticas detalladas en tiempo real.
           </p>
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary btn-lg">
+            <a href="#" className="btn btn-primary btn-lg" onClick={redirectToStore}>
               <Download size={20} />
-              Descargar en Play Store
+              Descargar App
             </a>
             <a href="#como-funciona" className="btn btn-outline btn-lg">
               <Play size={20} />
@@ -155,8 +157,37 @@ export default function LandingPage() {
           </div>
           <div className="feature-card">
             <div className="feature-icon"><Cloud size={28} /></div>
-            <h3>Nube Segura</h3>
-            <p>Tus datos se almacenan en la nube. Cambia de dispositivo sin perder tu progreso.</p>
+            <h3>Datos 100% Locales</h3>
+            <p>Tu progreso se guarda en tu dispositivo y no se envía a servidores externos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacidad-datos" className="features">
+        <h2>Privacidad y tratamiento de datos</h2>
+        <p className="features-subtitle">
+          Diseñada para funcionar sin servidores: tus datos no salen de tu dispositivo.
+        </p>
+        <div className="features-grid">
+          <div className="feature-card">
+            <div className="feature-icon"><Shield size={28} /></div>
+            <h3>Sin recolección externa</h3>
+            <p>No recopilamos, almacenamos ni enviamos datos personales a servidores externos.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon"><Check size={28} /></div>
+            <h3>Sin analíticas de terceros</h3>
+            <p>No utilizamos Firebase Analytics, Google Analytics ni servicios equivalentes.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon"><Check size={28} /></div>
+            <h3>Sin publicidad</h3>
+            <p>La app no integra redes publicitarias ni SDKs de anuncios.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon"><Shield size={28} /></div>
+            <h3>Procesamiento local</h3>
+            <p>Las funciones de escaneo y el progreso del álbum se procesan y guardan localmente.</p>
           </div>
         </div>
       </section>
@@ -169,7 +200,7 @@ export default function LandingPage() {
             <div className="step-number">1</div>
             <div className="step-icon"><Download size={32} /></div>
             <h3>Descarga la App</h3>
-            <p>Disponible gratis en Play Store. Crea tu cuenta en segundos o entra como invitado.</p>
+            <p>Disponible gratis en Play Store. Instala y empieza a usarla al instante.</p>
           </div>
           <div className="step-card">
             <div className="step-number">2</div>
@@ -191,7 +222,7 @@ export default function LandingPage() {
           <div className="cta-banner-content">
             <h2>Prepárate para completar tu álbum</h2>
             <p>Únete a miles de coleccionistas que ya están usando Album Collect 2026 para organizar su pasión.</p>
-            <a href="#" className="btn btn-accent btn-lg">
+            <a href="#" className="btn btn-accent btn-lg" onClick={redirectToStore}>
               <Download size={20} />
               Descargar Gratis
             </a>
