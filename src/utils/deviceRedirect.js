@@ -9,7 +9,7 @@ export function getStoreUrl() {
   
     // iOS
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return "https://apps.apple.com/app/idTU_APP_ID";
+      return "https://apps.apple.com/co/app/album-collect-2026/id6760950550";
     }
   
     // Default (desktop u otros)
